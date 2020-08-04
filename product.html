@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Este es un sitio genial">
+	 <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="CSS/estilo.css">
+	<link rel="stylesheet" href="CSS/grid.css">
+
+	<title>producto</title>
+</head>
+
+<body>
+	<nav><!--se pone el logo y enlaces de navegacion, dentro de nav debe ir el logo y los enlaces de navegacion contenidos en  <div> para poder trabajar en css-->
+		<div class="brand-image">
+			<img src="imagenes/logo.png" width="150">
+		</div>
+
+		<div class="nav-options">
+			<ul>
+				<li><a href="#">Preguntas frecuentes</a></li>
+				<li><a href="#">Productos</a></li>
+			</ul>
+		</div>
+	</nav><!--aca termina el nav-->
+
+	<div class="container-fadeIn"><!--grillas-->
+		<div class="row">
+			<div class="col-8">
+				<h3>Producto</h3>
+				<p>Descripcion detallada del producto</p>
+			</div>
+			<div class="col-4">
+				<img src="imagenes/rojo.png" width="200">
+			</div>			    	
+		</div>
+
+		<div class="row">
+			<div class="col-4 no-desk">
+				<img src="imagenes/rojo.png" width="200">
+			</div>
+			<div class="col-8">
+				<h3>Producto</h3>
+				<p>Descripcion detallada del producto</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-8">
+				<h3>Producto</h3>
+				<p>Descripcion detallada del producto</p>
+			</div>
+			<div class="col-4 no-mobile">
+				<img src="imagenes/rojo.png" width="200">
+			</div>			    	
+		</div>
+		
+		<div class="row">
+			<div class="col-4">
+				<img src="imagenes/rojo.png" width="200">
+			</div>
+			<div class="col-8">
+				<h3>Producto</h3>
+				<p>Descripcion detallada del producto</p>
+			</div>
+		</div>
+	</div><!--container-grid-->	
+
+	<footer class="footer"><!--pie de pagina-->
+		<div>
+	        <p>Curso de HTML y CSS en Platzi</p>
+	    </div>
+	    <div>
+	    	<p>Designed By @bedoya.stok</p>
+	    </div>
+	</footer><!--fin fie de pagina-->
+      
+	<script type="text/javascript" src="JS/script.js"></script>
+</body>
+
+</html>
