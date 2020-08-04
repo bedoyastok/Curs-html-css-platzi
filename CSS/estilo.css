@@ -1,0 +1,208 @@
+/*-------------Variables--------------*/
+:root/*todo dentro de root puede ser usado en el resto del css*/
+{
+	--green-color: #01A501;
+	--white-color: white;
+    --black-color: black;
+/*espaciado*/
+    --space: 10px;
+/*tipografia*/
+    --normal: 16px;
+/*box shadow*/
+    --box: 0 0 3px #BFBFBF;   
+}   
+
+/*-------------------------------------*/
+/*@import url("")/*con google fonts ponemos el enlace importar*/
+
+/*-------------Navigation section---------------*/
+
+html,body/*aplicado para toda la pagina web*/
+{
+	padding: 0;/*margen dentro interior*/
+	margin: 0;/*margen exterior*/
+	font-size: var(--normal);/*tamaño de fuente*/
+	font-family: Helvetica;/*tipo de fuente*/
+}
+
+p, label
+{
+	font-size: var(--normal);
+}
+
+nav
+{
+	display: flex;/*permite ajustar facilmente el logo y la navegacion*/
+	background-color: var(--green-color);/*color del fondo de la cabecera*/
+	padding: 5px;
+	color: var(--white-color);/*color letra*/
+	justify-content: space-between;/*pone el contenido a los extremos*/
+	align-items: center;/*calinea horizontalmete los elementos*/
+}
+
+nav img
+{
+	border-radius: 5px; 
+} 
+
+nav ul
+{
+	display: flex;
+}
+
+nav li
+{
+	padding: var(--space);
+	list-style: none;/*elimina los puntos y numeros de las listas*/
+}
+
+nav li a
+{
+	color: var(--white-color);
+	text-decoration: none;/*elimina el subrayado*/
+}
+
+nav li a:hover/*permite que al poner el cursor en los enlaces de navecion
+cambien de color*/
+{
+    color: var(--black-color);
+}
+
+/*--------------Main section--------------*/
+.main-section
+{
+	padding: 10%;/*porcentaje para distribucion*/
+	margin-bottom: 80px;
+	text-align: center;/*alinear texto en el centro*/
+}
+
+.products/*este contiene a product y content en html*/
+{
+	background-image: url("../imagenes/curve.png");/*para insertar imagen
+	solo en css y poder ajustar otras imagens sobre esta. (../) sirve para
+	devolver un carpeta en la url donde esta nuestra imagen*/
+    height: 95px;/*altura de la curva*/
+	background-size: cover;/*ocupar el tamaño del div que lo contiene*/
+	background-position: center;/*alinear al centro y arriba*/
+	padding: 15%;/*con este padding permite diferencias los productos*/
+	display: flex;/*para que queden uno al lado del otro*/
+	background-repeat: no-repeat;
+}
+
+.product
+{
+	padding: var(--space);/*espacio entre productos*/
+	margin-top: -260px;/*se usa con valor negativo para subir la imagen*/
+}
+
+
+.content
+{
+	border-radius: var(--space);
+	background-color: var(--white-color);
+	padding: 20px;
+    box-shadow: var(--box);/*agregar sombra en los elementos, se puede 
+    inspeccionar en el sitio web*/
+}
+
+.img-content
+{
+	text-align: center;
+}
+
+.main-button
+{
+	background-color: var(--green-color);
+	width: 100%;/*para que ocupe todo el ancho de la tarjeta*/
+	padding: var(--space);
+	font-size: var(--normal);
+	color: var(--white-color);
+	border: none;
+	cursor: pointer;/*para mostrar la mano en el cursos*/
+	border-radius: var(--space);
+}
+
+.main-button:hover
+{
+	background-color: #055E05;
+}
+
+/*-----------------Section benefits--------------*/
+
+.benefits
+{
+	padding-top: 50px;/*con este padding permite diferencias los productos*/
+	display: flex;/*para que queden uno al lado del otro*/
+}
+
+.benefit
+{
+	padding: 20px;/*espacio entre beneficios*/
+	text-align: center;
+}
+
+.img-benefits
+{
+	text-align: center;
+}
+
+/*----------------Seccion opinions---------------*/
+
+.main-section-opinions
+{
+	margin: 0 15px;
+	border-top: 1px solid gray;
+	padding: 8%;/*porcentaje para distribucion*/
+	text-align: center;/*alinear texto en el centro*/
+}
+
+.opinions
+{
+	display: flex;
+	padding-top: : 40px;
+}
+
+.opinion
+{
+  padding: var(--space);
+  text-align: center;
+}
+
+.img-opinion
+{
+	width: 100%;
+	box-shadow: var(--box);
+}
+
+.opinion-text
+{
+	padding-bottom: 3px;
+}
+	
+/*----------Seccion venta-----------*/
+.modulo-pago
+{
+	background-color: var(--white-color);
+	box-shadow: var(--box);
+	padding: var(--space);
+}
+
+.data
+{
+	margin-bottom: var(--space);
+	width: 100%;
+	height: 35px;
+	border-radius: 2px;
+	border: 1px solid var(--black-color);
+	padding: 8px;
+	box-sizing: border-box; /*toma la referencia para dar el width 100% desde el borde*/
+}
+
+.footer
+{
+	margin-top: 50px;
+	background: var(--black-color);
+	color: var(--white-color);
+	display: flex;
+	justify-content: space-around;
+}
